@@ -1,0 +1,79 @@
+body {
+  background: #DDD;
+  font-family: tahoma;
+  color: #444;
+}
+
+a {
+  text-decoration: none;
+  color: #444;
+}
+
+#flash {
+  width: 900px;
+  margin: 10px auto;
+  padding: 5px 10px;
+  background: #EEE;
+  border: 1px solid #900;
+  text-align: center;
+  color: #900;
+}
+
+#menu {
+  width: 900px;
+  margin: 10px auto;
+  padding: 10px;
+  background: #EEE;
+  border: 1px solid #CCC;
+  text-align: right;
+  word-spacing: 50px;
+}
+
+#menu a {
+  text-decoration: none;
+  color: #444;
+
+}
+
+#menu a:hover {
+  text-decoration: underline;
+  color: #666;
+}
+
+#login_menu {
+  width: 900px;
+  margin: 0px auto;
+  padding: 5px 10px;
+  background: #EEE;
+  border: 1px solid #CCC;
+  font-size: .8em;
+  text-align: center;
+}
+
+#login_menu a:hover {
+  text-decoration: underline;
+  color: #666;
+}
+
+#login_menu input {
+  margin: 0px 20px;
+  background: #FFF;
+  border: 1px solid #CCC;
+}
+
+#container {
+  width: 900px;
+  margin: 10px auto;
+  padding: 10px;
+  background: #EEE;
+  border: 1px solid #CCC;
+}
+
+#footer {
+  clear: both;
+  width: 900px;
+  margin: 10px auto;
+  padding: 10px;
+  color: #555;
+  text-align: center;
+}
