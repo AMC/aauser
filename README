@@ -1,0 +1,30 @@
+aauser - PHP Authentication and Authorization 
+Author: Andrew Canfield
+Date:   08.30.2010
+
+This includes the basic register, login and log out functionality.
+
+I plan on adding password reset and account editing.
+
+This system creates the following variables:
+  $_SESSION['userid']     -   The user id
+  $_SESSION['email']      -   The user's email
+  $_SESSION['first_name'] -   The user's first name
+  $_SESSION['last_name']  -   The user's last name
+  $_SESSION['zip_code']   -   The user's zip code
+  $_SESSION['role']       -   The user's role - user this to determine access in your application
+  $_SESSION['logged_in']  -   The user's status - either TRUE or FALSE
+  $_SESSION['flash']      -   An array used to pass messages throughout the application, it is displayed in the layout
+
+
+Installation -
+=======================================
+config/database.php 
+  Edit the connection string to match your database settings
+  
+sql/setup.sql
+  Run the commands in this file in your database to setup your database
+  
+sql/data.sql
+  Run this command to create the admin account
+    The password is hashed per the algorithms shown, if you change the algorithms, update the hash
