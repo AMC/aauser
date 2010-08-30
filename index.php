@@ -7,10 +7,8 @@
 <?php include("layout/_layout_menu.php"); ?>
 
 <div id="container">
-  Welcome to the site, please check out our <a href="catalog.php">catalog</a>.    
+  Welcome to the site.
 
-  
-  
   <div style="clear: both">
   </div>
 

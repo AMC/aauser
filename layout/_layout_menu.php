@@ -1,9 +1,5 @@
 <div id="menu">
 
-  <a href="index.php">Home</a>  
-  <a href="catalog.php">Catalog</a> 
-  <a href="cart.php">Cart</a>
-
   <?php if ($_SESSION['role'] == 'admin') { ?> 
     <a href="admin.php">Admin Area</a>
   <?php } ?> 

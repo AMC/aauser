@@ -18,14 +18,14 @@ include("config/database.php");
     $email = $db->real_escape_string($email); 
   $password = trim($_REQUEST['password']); 
     $password = $db->real_escape_string($password); 
-    #$password = hash('whirlpool', $password);   # If the password is hashed, does not detect empty password
-    $salt = hash('whirlpool', $password); 
+    #$password = hash('md5', $password);   # If the password is hashed, does not detect empty password
+    $salt = hash('gost', $password);        # use a different combination of hashes for safety
 
   $password_confirmation = trim($_REQUEST['password_confirmation']); 
     $password_confirmation = $db->real_escape_string($password_confirmation); 
-    #$password_confirmation = hash('whirlpool', $password_confirmation);
 
-  $password_hash = hash('sha1', $password . $salt);
+
+  $password_hash = hash('adler32', $password . $salt);
 
 # Actions
 # Must be in this order to work properly
